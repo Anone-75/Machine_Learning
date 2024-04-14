@@ -13,5 +13,5 @@ new_data = np.delete(iris.data, removed, axis=0)
 clf = tree.DecisionTreeClassifier().fit(new_data, new_target)
 
 fig = plt.figure(figsize=(15,10))
-plot_tree(clf, feature_names=iris.feature_names, class_names=iris.target_names, filled=True)
+plot_tree(clf, feature_names=iris.feature_names, class_names=iris.target_names, )
 plt.show()
